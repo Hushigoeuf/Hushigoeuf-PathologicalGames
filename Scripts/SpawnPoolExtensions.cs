@@ -7,11 +7,8 @@ namespace Hushigoeuf.PathologicalGames
     /// Простые методы для упрощенной работы с PoolManager.
     /// Источник: http://poolmanager.path-o-logical.com/
     /// </summary>
-    public static class HG_PG_SpawnPoolExtensions
+    public static class SpawnPoolExtensions
     {
-        /// <summary>
-        /// Возвращает Transform префаба из SpawnPool.
-        /// </summary>
         public static Transform HGGetPrefabTransform(this SpawnPool pool, int prefabIndex = 0)
         {
             foreach (var prefab in pool.prefabs.Values)
@@ -26,9 +23,6 @@ namespace Hushigoeuf.PathologicalGames
         public static GameObject HGGetPrefab(this SpawnPool pool, int prefabIndex = 0) =>
             pool.HGGetPrefabTransform(prefabIndex)?.gameObject;
 
-        /// <summary>
-        /// Создает копию заданного префаба из SpawnPool и возвращает Transform этой копии.
-        /// </summary>
         public static Transform HGSpawn(this SpawnPool pool, int prefabIndex = 0)
         {
             var prefab = pool.HGGetPrefabTransform(prefabIndex);
