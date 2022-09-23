@@ -1,7 +1,7 @@
 # Hushigoeuf-PathologicalGames
 
 ```
-Уже не актуально. Использую Zenject с его решениями (Factory, Pool) вместо PoolManager.
+Можно использовать Zenject вместо PoolManager с его встроенными решениями (Factory, Pool).
 ```
 
 Дополнительные классы для работы с [PoolManager](http://poolmanager.path-o-logical.com/).
